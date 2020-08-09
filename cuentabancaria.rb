@@ -5,3 +5,9 @@ class CuentaBancaria #Creación clase Cuenta Bancaria
         @numero_cuenta = numero_cuenta
         @saldo = saldo
     end
+
+    def transferir(monto, cuenta_bancaria) #Creación de método transferir
+        @saldo -= monto
+        cuenta_bancaria.saldo += monto
+    end
+end
