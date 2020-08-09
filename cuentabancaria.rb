@@ -31,12 +31,10 @@ end
 
 cuenta1 = CuentaBancaria.new("Banco de Chile", "018088356", 5000)
 cuenta2 = CuentaBancaria.new("Banco Santander", "015328860", 5000)
+usuario = Usuario.new("Tamara Rubilar Pinilla", [cuenta1, cuenta2])
 
 cuenta1.transferir(5000, cuenta2)
 
 puts cuenta1.inspect
 puts cuenta2.inspect
-
-usuario = Usuario.new("Tamara Rubilar Pinilla", [cuenta1, cuenta2])
-
-puts usuario.inspect
+puts usuario.saldo_total
