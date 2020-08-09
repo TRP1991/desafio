@@ -11,3 +11,10 @@ class CuentaBancaria #Creación clase Cuenta Bancaria
         cuenta_bancaria.saldo += monto
     end
 end
+
+class Usuario #Creación clase Usuario
+    attr_accessor :nombre
+    def initialize(nombre, cuentas_bancarias)
+        @nombre = nombre
+        @cuentas_bancarias = cuentas_bancarias
+    end
