@@ -18,3 +18,13 @@ class Usuario #Creación clase Usuario
         @nombre = nombre
         @cuentas_bancarias = cuentas_bancarias
     end
+
+    def saldo #Creación método saldo 
+        total = 0
+        @cuentas_bancarias.count.times do |i|
+            total += @cuentas_bancarias[i].saldo
+        end
+        total
+    end
+end
+
