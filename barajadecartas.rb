@@ -20,3 +20,12 @@ class Baraja #Creación clase Baraja
         @cartas.pop
     end
 
+    def repartir_mano #Creación método repartir_mano que permite devolver un arreglo con las primeras 5 cartas de la baraja
+        mano = []
+        5.times { |i| mano.push(@cartas.reverse[i])}
+        5.times {@cartas.pop}
+    end
+end
+
+
+
