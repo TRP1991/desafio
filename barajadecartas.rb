@@ -26,6 +26,3 @@ class Baraja #Creación clase Baraja
         5.times {@cartas.pop}
     end
 end
-
-
-
